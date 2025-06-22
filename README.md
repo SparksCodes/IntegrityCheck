@@ -17,14 +17,14 @@
 ### 🖥️ Main Interface
 The main window allows you to choose the hashing algorithm, select a file or enter custom text, and then generate or verify its hash.
 
-![Main Interface](./2025-06-22_11-55.png)
+![2025-06-22_11-55](https://github.com/user-attachments/assets/d0682e43-5a40-42da-a535-d5c5a75c24fd)
 
 ---
 
 ### 📂 File Hash Generation
 After selecting a file, the app shows its metadata and generates the corresponding hash based on the selected algorithm.
 
-![Hash from file](./2025-06-22_11-57.png)
+![2025-06-22_11-57](https://github.com/user-attachments/assets/ea0e0108-465a-43c3-b40e-386c79f6e886)
 
 ---
 
@@ -32,7 +32,7 @@ After selecting a file, the app shows its metadata and generates the correspondi
 If the external hash matches the generated one, the application displays a green confirmation message:
 **“Los hashes coinciden.”**
 
-![Hash match](./2025-06-22_11-58.png)
+![2025-06-22_11-58](https://github.com/user-attachments/assets/e3a60b5c-6a2e-414a-83a8-9fbd0b5fcf23)
 
 ---
 
@@ -40,21 +40,21 @@ If the external hash matches the generated one, the application displays a green
 If the external hash does not match, a red error message is shown:
 **“Los hashes no coinciden.”**
 
-![Hash mismatch](./2025-06-22_11-58_1.png)
+![2025-06-22_11-58_1](https://github.com/user-attachments/assets/796a3f62-a19c-459b-9104-a33793ef6db9)
 
 ---
 
 ### 🔐 SHA-256 Hash Example
 In this case, a file named `cifrado.txt` is selected, and a SHA-256 hash is generated.
 
-![SHA256 file hash](./2025-06-22_11-59.png)
+![2025-06-22_11-59](https://github.com/user-attachments/assets/24476bf0-c22a-4d7d-a740-9e4fe3223190)
 
 ---
 
 ### 🧾 SHA-256 Verification Success
 After inputting the correct SHA-256 hash manually, the application verifies it successfully.
 
-![SHA256 match](./2025-06-22_11-59_1.png)
+![2025-06-22_11-59_1](https://github.com/user-attachments/assets/eb1fb951-6769-401d-80ee-76fa0915301c)
 
 ---
 
