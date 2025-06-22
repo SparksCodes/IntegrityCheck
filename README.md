@@ -67,6 +67,8 @@ After inputting the correct SHA-256 hash manually, the application verifies it s
 Download the latest `.deb` package from the [Releases](https://github.com/yourusername/integritycheck/releases) section and install it with:
 
 ```bash
+sudo dpkg -i integritycheck_x.x.x_all.deb
+```
 
 ## 🧰 Development Setup (Node.js & Electron)
 
@@ -83,4 +85,3 @@ npm start
 ```
 
 > Make sure you have **Node.js** (v14 or higher) and **npm** installed on your system.
-sudo dpkg -i integritycheck_x.x.x_all.deb
