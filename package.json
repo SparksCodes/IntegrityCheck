@@ -1,0 +1,46 @@
+{
+  "name": "integritytool",
+  "version": "1.0.0",
+  "description": "Aplicación de verificación de hash con Electron",
+  "main": "main.js",
+  "author": {
+    "name": "PMS",
+    "email": "pedro@example.com"
+  },
+  "homepage": "https://github.com/tuusuario/integritytool",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.tunombre.integritytool",
+    "productName": "IntegrityTool",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/*/{test,__tests__,tests}/**",
+      "!**/*.md"
+    ],
+    "win": {
+    "icon": "icons/icon.ico",
+    "target": "nsis"
+  },
+  "linux": {
+    "icon": "icons/icon.png",
+    "target": "deb"
+  }
+  },
+  "devDependencies": {
+    "electron": "^36.4.0",
+    "electron-builder": "^24.17.0"
+  },
+  "dependencies": {
+    "exifreader": "^4.31.0",
+    "exiftool-vendored": "^30.2.0",
+    "file-type": "^21.0.0"
+  }
+}
+

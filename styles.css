@@ -1,0 +1,248 @@
+:root {
+  --color-fondo: #e9e9e9ff;
+  --color-verde: #01d501ff;
+  --color-gris-oscuro: #999999ff;
+  --color-rojo: #e20023ff;
+  --color-texto-principal: #000000;
+  --color-borde: #cccccc;
+  --color-boton: #666666;
+  --color-boton-hover: #4d4d4d;
+
+  --font-primary: 'Sansation', sans-serif;
+  --font-secundary: 'ShareTechMono', monospace;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('./fonts/Sansation-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('./fonts/Sansation-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Sansation';
+  src: url('./fonts/Sansation-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'ShareTechMono';
+  src: url('./fonts/ShareTechMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+body {
+  font-family: var(--font-primary);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--color-fondo);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.logo-text {
+  height: 42px;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+}
+
+select,
+input,
+textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1.2rem;
+  font-family: var(--fuente-principal);
+  border: 1px solid var(--color-gris-oscuro);
+  background-color: var(--color-fondo);
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  padding-bottom: .8rem;
+  color: var(--color-boton);
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  border-color: var(--color-verde);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.file-label {
+  background-color: var(--color-fondo);
+  border: 1px solid var(--color-gris-oscuro);
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.file-label:hover {
+  border-color: var(--color-verde);
+  box-shadow: 0 0 4px var(--color-verde);
+}
+
+.file-section {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+}
+
+.box-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 220px;
+}
+
+.file-label {
+  height: 100px;
+  background-color: var(--color-fondo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.folder-icon {
+  width: 86px;
+  height: 46px;
+  opacity: 0.6;
+}
+
+.file-text {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  text-align: right;
+  color: var(--color-boton);
+}
+
+
+/* #file-input {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: white;
+  text-align: left;
+  overflow-wrap: break-word;
+} */
+
+
+
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid var(--color-gris-oscuro);
+    background-color: var(--color-fondo);
+    padding-bottom: .8rem;
+    margin-bottom: 1rem;
+    transition: border-bottom-color 0.3s;
+    color: var(--color-boton);
+}
+
+input[type="text"]:focus {
+    border-bottom-color: var(--color-verde);
+}
+
+input[type="text"]::placeholder {
+opacity: .5;
+}
+
+
+
+
+
+button {
+  width: 100%;
+  height: 4rem;
+  padding: 1rem;
+  font-size: 24px;
+  margin-bottom: 1rem;
+  font-family: var(--font-primary);
+  background-color: var(--color-gris-oscuro);
+  color: var(--color-fondo);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color-boton-hover);
+}
+
+#verification-result {
+  font-family: var(--font-primary);
+  font-size: 22px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+#generated-hash {
+  height: 8rem;
+  background-color: #eee;
+  margin: 10px 0;
+  line-height: 2rem;
+  font-family: 'ShareTechMono', monospace;
+  font-size: 1.2rem;
+  word-break: break-all;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+#verification-result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+
+.file-info-box {
+            flex: 1;
+            text-align: left;
+            background-color: var(--color-fondo);
+            font-size: 1.2rem;
+            color: var(--color-gris-oscuro);
+            margin: 20px 0;
+        }
+
+        .file-info-box strong {
+            opacity: .5;
+        }
+
+        .file-info-box .name{
+          color: var(--color-boton-hover);
+           text-align: end;
+        }
+        .file-info-box .size{
+          color: var(--color-boton-hover);
+        }
+        .file-info-box .type{
+          color: var(--color-boton-hover);
+        }

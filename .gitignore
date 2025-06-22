@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.deb
+*.AppImage
+*.zip
+*.log
+.DS_Store

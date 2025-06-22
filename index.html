@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Verificador de Hash</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="renderer.js"></script>
+</head>
+
+<body>
+
+    <div class="header-logo">
+        <img src="./public/logo.svg" alt="Logo IntegrityCheck" class="logo-text" />
+        <img src="./public/favicon.svg" alt="Icono de barras" class="logo-icon" />
+    </div>
+
+    <select id="hash-algo">
+        <option value="md5">MD5</option>
+        <option value="sha1">SHA-1</option>
+        <option value="sha256">SHA-256</option>
+        <option value="sha512">SHA-512</option>
+    </select>
+
+
+
+
+    <div class="file-section">
+        <div class="box-section">
+            <label for="file-input" class="file-label">
+                <img src="./public/folder_open.svg" alt="Icono carpeta" class="folder-icon" />
+                <div class="file-text">Selecciona<br>Archivo</div>
+            </label>
+            <input type="file" id="file-input" hidden />
+
+        </div>
+
+
+        <div class="file-info-box">
+        <p><strong>Nombre:</strong> <span class="name"></span></p>
+        <p><strong>Tamaño:</strong> <span class="size"></span></p>
+        <p><strong>Tipo:</strong> <span class="type"></span></p>
+    </div>
+    </div>
+
+
+
+
+
+    <input type="text" id="input-text" placeholder="Texto para cifrar">
+
+    <input type="text" id="external-hash" placeholder="Hash externo para comparar">
+
+    <p id="generated-hash"></p>
+
+    <button id="verify-btn">Obtención y verifiación del hash</button>
+    <button id="clear-btn">Limpiar campos</button>
+
+    <p id="verification-result"></p>
+</body>
+
+</html>
