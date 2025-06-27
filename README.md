@@ -64,7 +64,7 @@ After inputting the correct SHA-256 hash manually, the application verifies it s
 
 ## 📦 Installation
 
-Download the latest `.deb` package from the [Releases](https://github.com/yourusername/integritycheck/releases) section and install it with:
+Download the latest `.deb` package from the [Releases](https://github.com/SparksCodes/IntegrityCheck/releases/tag/v1.0.0) section and install it with:
 
 ```bash
 sudo dpkg -i integritycheck_x.x.x_all.deb
